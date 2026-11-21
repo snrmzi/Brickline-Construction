@@ -148,16 +148,6 @@ Open http://localhost:3000.
 - Animations respect `prefers-reduced-motion`
 - Decorative elements are hidden from assistive technology
 
-## Performance
-
-Measured with Lighthouse on the production deployment:
-
-| Page | Performance | Accessibility | Best Practices | SEO |
-|---|---|---|---|---|
-| Home | _add_ | _add_ | _add_ | _add_ |
-| Projects | _add_ | _add_ | _add_ | _add_ |
-| Project detail | _add_ | _add_ | _add_ | _add_ |
-
 ## Challenges and lessons learned
 
 - **Cache Components and time-dependent values.** Next.js 16's prerendering rejects values that change between renders, such as `new Date()` in the footer. I resolved it by caching the footer with `"use cache"`, which taught me how the framework separates static, cached, and request-time work.
